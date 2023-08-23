@@ -21,9 +21,25 @@ Precision is the metric of choice for this analysis because our client would pre
 ### Evaluation
 Our decision tree model outperforms our logistic regression just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
 
-## Decision Tree ROC:
+### Decision Tree ROC:
 
 ![Decision Tree ROC](images/ROCtree.png)
+
+### Decision Tree Confusion Matrix:
+
+![Decision Tree CM](images/conftree.png)
+
+Note: False positive rate is 8.68%, considerably low for our target outcome.
+
+### Logistic Regression ROC:
+
+![Log reg ROC](images/ROClogreg.png)
+
+### Logistic Regression Confusion Matrix:
+
+![Log reg cm](images/confreg.png)
+
+Note: False positive rate is 8.62%, considerably low for our target outcome.
 
 In regrads to the logistic regression, we have identified top 10 most significant aspects that will impact our predictions on whether one will or will not receive a seasonal shot. These aspects include h1n1 vaccine status, doctor recommendation for seasonal shot, being older than 65, doctor recommendation for h1n1 shot, opinion on seasonal risk, opinion on vaccine effectiveness, behavioral aspects such as frequently washing hands, being between 18 and 34 years old, and being a health worker.
 
