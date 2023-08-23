@@ -6,7 +6,7 @@
 Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/photos/GZkhG_EvWfY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 
-### Overview TEST
+### Overview 
 Vaccines are a very important tool for the promotion of public health. They work best when most people get their vaccinations, leading to higher rates of group immunity and protecting those who cannot be immunized. Since vaccines are so valuable, it is useful to know whether a person is likely to pursue immunization.
 
 ### Business and Data Understanding
@@ -19,7 +19,9 @@ We then created both a simple logistic regression and simple decision tree. Both
 Precision is the metric of choice for this analysis because our client would prefer false negatives to false positives. Encouraging an already immunized person to get a flu shot is less of an issue than assuming a patient will get theirs and then they don't. Promoting immunization is not cost-free; otherwise our dummy model would be the ideal. Our goal is a fitted precision: a good guess that errs on the side of negative.
 
 ### Evaluation
-Our logistic regression model outperforms our decision tree just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
+Our decision tree model outperforms our logistic regression just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
+
+In regrads to the logistic regression, we have identified top 10 most significant aspects that will impact our predictions on whether one will or will not receive a seasonal shot. These aspects include h1n1 vaccine status, doctor recommendation for seasonal shot, being older than 65, doctor recommendation for h1n1 shot, opinion on seasonal risk, opinion on vaccine effectiveness, behavioral aspects such as frequently washing hands, being between 18 and 34 years old, and being a health worker.
 
 ### Recommendations
 We offer our logistic regression model to help the healthcare organization predict whether a patient will get the seasonal flu shot.
