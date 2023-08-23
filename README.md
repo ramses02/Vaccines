@@ -1,7 +1,7 @@
 # Vaccines
 
 <p align="center">
-  <img width="800" height="300" src="images/CDC_unsplash.jpg">
+  <img width="800" height="500" src="images/CDC_unsplash.jpg">
 </p>
 Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/photos/GZkhG_EvWfY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
