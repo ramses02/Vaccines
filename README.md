@@ -33,7 +33,7 @@ Note: False positive rate is 8.68%, considerably low for our target outcome.
 
 ### Logistic Regression ROC:
 
-![Log reg ROC](images/ROClogreg.png)
+![Log reg ROC](images/final_log_AUC.png)
 
 ### Logistic Regression Confusion Matrix:
 
@@ -42,6 +42,16 @@ Note: False positive rate is 8.68%, considerably low for our target outcome.
 Note: False positive rate is 8.62%, considerably low for our target outcome.
 
 In regrads to the logistic regression, we have identified top 10 most significant aspects that will impact our predictions on whether one will or will not receive a seasonal shot. These aspects include h1n1 vaccine status, doctor recommendation for seasonal shot, being older than 65, doctor recommendation for h1n1 shot, opinion on seasonal risk, opinion on vaccine effectiveness, behavioral aspects such as frequently washing hands, being between 18 and 34 years old, and being a health worker.
+
+Features vs. Coefficients:
+
+![Log reg cm](images/features.png)
+
+In addition to the final, complex logistic regression, we have created another, simpler model that used features with high correlation coefficients to our target, aiming to increase our precision score. However, that was not the case. The visualization below describes the performance across all four classifiers used in this project, out of which, the logistic regression comes on top, very close to the decision tree.
+
+Classifier Performances:
+
+![Log reg cm](images/classifier.png)
 
 ### Recommendations
 We offer our logistic regression model to help the healthcare organization predict whether a patient will get the seasonal flu shot.
