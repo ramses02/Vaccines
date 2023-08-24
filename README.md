@@ -56,6 +56,7 @@ Classifier Performances:
 ### Recommendations
 We offer our logistic regression model to help the healthcare organization predict whether a patient will get the seasonal flu shot.
 We also offer a simplified model that achieves very similar results with only four inputs. Determining these four features about a patient is likely much more achievable than gathering 37 data points. The ease of making predictions about a patient may compensate for the slight loss of precision.
+Given its high correlation with vaccine status, we also recommend that doctors make a regular practice of recommending the flu vaccine to their patients. It is the only feature in the model completely within the control of our client, and it has a strong relationship with patients getting immunized.
 
 ### Next Steps
 The model can be improved going forward if our client keeps track of its efforts to promote vaccination. We can add a feature based on whether a patient received targeted encouragement, and see the effect that has on vaccine uptake. It seems likely that some people are unvaccinated due to hesitancy or personal conviction, while others simply don't put in the effort to make sure they get their shot every season. Teasing out the differences in those two groups may suggest further ways to categorize and effectively reach these potentially different groups.
