@@ -65,10 +65,11 @@ Given its high correlation with vaccine status, we also recommend that doctors m
 The model can be improved going forward if our client keeps track of its efforts to promote vaccination. We can add a feature based on whether a patient received targeted encouragement, and see the effect that has on vaccine uptake. It seems likely that some people are unvaccinated due to hesitancy or personal conviction, while others simply don't put in the effort to make sure they get their shot every season. Teasing out the differences in those two groups may suggest further ways to categorize and effectively reach these potentially different groups.
 
 ### Repository Structure
+├── data
 ├── images
 ├── working_notebooks
-├── zippedData
-├── .gitignore
-├── Data_Analysis.ipynb
 ├── README.md
-└── presentation.pdf
+├── main_notebook.ipynb
+├── presentation.pdf
+├── .gitignore
+└── LICENSE
