@@ -58,7 +58,7 @@ Classifier Performances:
 ### Evaluation
 Our logistic regression outperforms our decision tree just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
 
-Our final model has a precision score of 80.3%. Our simple model is slightly less precise with a score of 78.4%
+Our final model has a precision score of 80.3%. Our simple model is slightly less precise with a score of 78.4%.
 
 ### Recommendations
 We offer our logistic regression model to help the healthcare organization predict whether a patient will get the seasonal flu shot.
