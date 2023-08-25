@@ -76,6 +76,6 @@ The model can be improved going forward if our client keeps track of its efforts
 ├── working_notebooks
 ├── README.md
 ├── main_notebook.ipynb
-├── presentation.pdf
 ├── .gitignore
-└── LICENSE
+├── LICENSE
+└── presentation.pdf
