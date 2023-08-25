@@ -21,8 +21,7 @@ We then created both a simple logistic regression and simple decision tree. Both
 
 Precision is the metric of choice for this analysis because our client would prefer false negatives to false positives. Encouraging an already immunized person to get a flu shot is less of an issue than assuming a patient will get theirs and then they don't. Promoting immunization is not cost-free; otherwise our dummy model would be the ideal. Our goal is a fitted precision: a good guess that errs on the side of negative.
 
-### Evaluation
-Our logistic regression outperforms our decision tree just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
+
 
 ### Decision Tree ROC:
 
@@ -56,9 +55,16 @@ Classifier Performances:
 
 ![Log reg cm](images/classifier.png)
 
+### Evaluation
+Our logistic regression outperforms our decision tree just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
+
+Our final model has a precision score of 80.3%. Our simple model is slightly less precise with a score of 78.4%
+
 ### Recommendations
 We offer our logistic regression model to help the healthcare organization predict whether a patient will get the seasonal flu shot.
-We also offer a simplified model that achieves very similar results with only four inputs. Determining these four features about a patient is likely much more achievable than gathering 37 data points. The ease of making predictions about a patient may compensate for the slight loss of precision.
+
+We also offer a simplified model that achieves very similar results with only four inputs. Determining these four features about a patient is likely much more achievable than gathering 36 data points. The ease of making predictions about a patient may compensate for the slight loss of precision.
+
 Given its high correlation with vaccine status, we also recommend that doctors make a regular practice of recommending the flu vaccine to their patients. It is the only feature in the model completely within the control of our client, and it has a strong relationship with patients getting immunized.
 
 ### Next Steps
