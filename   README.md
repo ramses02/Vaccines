@@ -1,16 +1,19 @@
 # Vaccines
+## By Lydia Cuffman and Ramses Nestor Reis
 
 <p align="center">
   <img width="800" height="500" src="images/CDC_unsplash.jpg">
 </p>
 Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/photos/GZkhG_EvWfY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+ 
+GitHub Repository: https://github.com/ramses02/Vaccines
+Presentation: 
 
 ### Overview 
 Vaccines are a very important tool for the promotion of public health. They work best when most people get their vaccinations, leading to higher rates of group immunity and protecting those who cannot be immunized. Since vaccines are so valuable, it is useful to know whether a person is likely to pursue immunization.
 
 ### Business and Data Understanding
-We have been tasked by a large healthcare organization to determine which classify patients based on their seasonal flu shot status. In an overtaxed medical system, it is to the organization's advantage to minimize the number of flu cases. Obviously it is also to the benefit of the patients to not suffer from the flu and its possible serious consequences. By creating a model of whether a patient is likely to get their seasonal flu vaccine, we can help the organization focus efforts on reaching out to those patients who are less likely to get their shot. If the healthcare organization can vaccinate more patients, they can dedicate their finite resources to other important but perhaps less urgent needs.
+We have been tasked by a large healthcare organization to classify patients based on their seasonal flu shot status. In an overtaxed medical system, it is to the organization's advantage to minimize the number of flu cases. Obviously it is also to the benefit of the patients to not suffer from the flu and its possible serious consequences. By creating a model of whether a patient is likely to get their seasonal flu vaccine, we can help the organization focus efforts on reaching out to those patients who are less likely to get their shot. If the healthcare organization can vaccinate more patients, they can dedicate their finite resources to other important but perhaps less urgent needs.
 
 ### Modeling
 We began by creating a dummy model that always predicts that a person did not receive their seasonal flu vaccine. This baseline estimator is right about 53% of the time.
@@ -19,7 +22,7 @@ We then created both a simple logistic regression and simple decision tree. Both
 Precision is the metric of choice for this analysis because our client would prefer false negatives to false positives. Encouraging an already immunized person to get a flu shot is less of an issue than assuming a patient will get theirs and then they don't. Promoting immunization is not cost-free; otherwise our dummy model would be the ideal. Our goal is a fitted precision: a good guess that errs on the side of negative.
 
 ### Evaluation
-Our decision tree model outperforms our logistic regression just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
+Our logistic regression outperforms our decision tree just slightly, but it does so by multiple measures. It has a higher precision score as well as overall accuracy score, and its ROC curve is slightly closer to ideal.
 
 ### Decision Tree ROC:
 
@@ -41,13 +44,13 @@ Note: False positive rate is 8.68%, considerably low for our target outcome.
 
 Note: False positive rate is 8.62%, considerably low for our target outcome.
 
-In regrads to the logistic regression, we have identified top 10 most significant aspects that will impact our predictions on whether one will or will not receive a seasonal shot. These aspects include h1n1 vaccine status, doctor recommendation for seasonal shot, being older than 65, doctor recommendation for h1n1 shot, opinion on seasonal risk, opinion on vaccine effectiveness, behavioral aspects such as frequently washing hands, being between 18 and 34 years old, and being a health worker.
+In regards to the logistic regression, we identified the top 10 most significant aspects that impact our predictions on whether one will or will not receive a seasonal shot. These aspects include h1n1 vaccine status, doctor recommendation for seasonal shot, being older than 65, doctor recommendation for h1n1 shot, opinion on seasonal risk, opinion on vaccine effectiveness, behavioral aspects such as frequently washing hands, being between 18 and 34 years old, and being a health worker.
 
 Features vs. Coefficients:
 
 ![Log reg cm](images/features.png)
 
-In addition to the final, complex logistic regression, we have created another, simpler model that used features with high correlation coefficients to our target, aiming to increase our precision score. However, that was not the case. The visualization below describes the performance across all four classifiers used in this project, out of which, the logistic regression comes on top, very close to the decision tree.
+In addition to the final, complex logistic regression, we created another, simpler model that used features with high correlation coefficients to our target. Our simple model, using only four features, performs almost as well as our 36-feature complex model. We will present it to our client as an alternative for situations where extensive data collection may be cost-prohibitive or even impossible.
 
 Classifier Performances:
 
@@ -60,3 +63,12 @@ Given its high correlation with vaccine status, we also recommend that doctors m
 
 ### Next Steps
 The model can be improved going forward if our client keeps track of its efforts to promote vaccination. We can add a feature based on whether a patient received targeted encouragement, and see the effect that has on vaccine uptake. It seems likely that some people are unvaccinated due to hesitancy or personal conviction, while others simply don't put in the effort to make sure they get their shot every season. Teasing out the differences in those two groups may suggest further ways to categorize and effectively reach these potentially different groups.
+
+### Repository Structure
+├── images
+├── working_notebooks
+├── zippedData
+├── .gitignore
+├── Data_Analysis.ipynb
+├── README.md
+└── presentation.pdf
